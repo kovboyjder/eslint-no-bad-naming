@@ -1,0 +1,26 @@
+{
+  "name": "eslint-plugin-no-bad-naming-variables",
+  "version": "0.0.3",
+  "description": "Ensure a proper naming convention for your variables",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "scripts": {
+    "test": "mocha ./tests/lib/rules/*.js"
+  },
+  "author": "Jakob Kjaer",
+  "main": "lib/index.js",
+  "dependencies": {
+    "requireindex": "~1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "~3.9.1",
+    "mocha": "^3.5.3"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "ISC"
+}
