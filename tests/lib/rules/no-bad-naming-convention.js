@@ -41,13 +41,21 @@ ruleTester.run("no-bad-naming-convention", rule, {
         "var oModel = new JSONModel({})",
         "var oModel = this.getModel()",
         "var i = 5 + 5",
-        "var sTest = 'Hello' + 'hello'"
+        "var sTest = 'Hello' + 'hello'",
+        "var bBool = true",
+        "var bBool = false"
 
     ],
 
     invalid: [
       {
           code: "var that = 'Hello World'",
+          errors: [{
+              message: "Bad naming of variable",
+              type: "VariableDeclarator"
+          }]
+      },{
+          code: "var bBool = 'true'",
           errors: [{
               message: "Bad naming of variable",
               type: "VariableDeclarator"
