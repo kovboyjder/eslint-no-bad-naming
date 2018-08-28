@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-no-bad-naming-variables",
-  "version": "0.0.4",
+  "version": "0.0.8",
   "description": "Ensure a proper naming convention for your variables",
   "repository": {
 		"type": "git",
